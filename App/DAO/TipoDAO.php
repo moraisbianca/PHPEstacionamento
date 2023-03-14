@@ -47,7 +47,7 @@ class TipoDAO extends DAO
 
     public function update(TipoModel $model)
     {
-        $sql = "UPDATE tipo set descricao=? WHERE id=?";
+        $sql = "UPDATE tipo set descricao=? WHERE id=? ";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $model->descricao);
