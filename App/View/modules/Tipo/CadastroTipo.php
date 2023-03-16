@@ -18,6 +18,28 @@
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">veiculo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">conbustivel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">marca</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div>
       <legend>Cadastro de Tipos de Veículos</legend>
       
       <form action="/tipo/save" method="post">
@@ -27,17 +49,21 @@
                         name="id" 
                         value="<?= $model->id ?>">
             
-            <label for="descricao">Descrição:</label>
-            <input name="descricao" 
-                        id="descricao" 
-                        type="text" 
-                        value="<?= $model->descricao ?>" />
-
-            <button type="submit">Enviar</button>
+            <div center class="mb-3">
+                 <label for="formGroupExampleInput" class="form-label">Insira o Tipo</label>
+                 <input type="text" class="form-control{min-width:800px;}" id="formGroupExampleInput" placeholder="Tipo:" value="<?= $model->descricao ?>">                    
+            </div>
+            
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                 <button class="btn btn-primary" type="button">Button</button>
+            </div>
 
         </fieldset>
 
     </form>
+
+    </form>
+</div>
 </body>
 
 </html>
