@@ -15,7 +15,7 @@ $parse_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 switch ($parse_uri) {
 
         //  rotas de veículo
-    case "/veiculos":
+    case "/veiculo":
         VeiculoController::index();
         break;
 
@@ -74,11 +74,11 @@ switch ($parse_uri) {
         TipoController::form();
         break;
 
-    case "/form/save":
+    case "/tipo/save":
         TipoController::save();
         break;
 
-    case "/form/delete":
+    case "/tipo/delete":
         TipoController::delete();
         break;
 

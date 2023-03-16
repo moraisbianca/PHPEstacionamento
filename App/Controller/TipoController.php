@@ -2,7 +2,7 @@
 
 namespace APP\Controller;
 
-use APP\Model\TipoModel;
+use App\Model\TipoModel;
 
 class TipoController extends Controller
 {

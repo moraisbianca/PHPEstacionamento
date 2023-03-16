@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Model\VeiculoModel;
+
 class VeiculoController extends Controller {
 
       public static function index()
@@ -11,7 +13,13 @@ class VeiculoController extends Controller {
 
       public static function form()
       {
+            $model = new VeiculoModel();
 
+            $model->getAllMarca();
+            $model->getAllTipo();
+            $model->getAllCombustivel();
+            $model->getAllFabricante();
+            // INCLUDE;
       }
       
       public static function save()
