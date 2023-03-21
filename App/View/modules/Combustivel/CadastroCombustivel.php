@@ -30,7 +30,7 @@
         <a class="nav-link" href="/marca/form">Marca</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/frabricante/form">Fabricante</a>
+        <a class="nav-link" href="/fabricante/form">Fabricante</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="/veiculo/form">Veiculo</a>
@@ -43,7 +43,7 @@
 <div class="container">
       <legend>Cadastro de Combustíveis</legend>
       
-      <form action="/marca/save" method="post">
+      <form action="/combustivel/save" method="post">
 
         <fieldset>
             <input type="hidden" 

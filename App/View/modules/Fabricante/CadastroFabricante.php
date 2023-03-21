@@ -43,7 +43,7 @@
 <div class="container">
       <legend>Cadastro de Fabricante</legend>
       
-      <form action="/marca/save" method="post">
+      <form action="/fabricante/save" method="post">
 
         <fieldset>
             <input type="hidden" 

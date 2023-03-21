@@ -18,7 +18,31 @@
 </head>
 
 <body>
-      <legend>Cadastro de Veículos</legend>
+
+<div class="container">
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="">Veiculo</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/tipo/form">Tipo</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/marca/form">Marca</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/fabricante/form">Fabricante</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/combustivel/form">Combustivel</a>
+    </li>
+    </ul>
+</div>
+
+<br>
+
+<div class="container">
+      <legend>Cadastro de Veiculo</legend>
       
       <form action="/veiculo/save" method="post">
 
@@ -27,42 +51,101 @@
                         name="id" 
                         value="<?= $model->id ?>">
             
-            <label for="">Placa:</label>
-            <input name="placa" 
+            <div center class="mb-3">
+                 <label for="formGroupExampleInput" class="form-label">Insira a Placa</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="placa:" 
+                        name="placa" 
                         id="placa" 
                         type="text" 
-                        value="<?= $model->placa ?>" />
-                        
-             <label for="">Modelo:</label>
-             <input name="modelo" 
+                        value="<?= $model->placa ?>">                    
+            </div>
+
+            <div center class="mb-3">
+                 <label for="formGroupExampleInput" class="form-label">Insira a modelo</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="modelo:" 
+                        name="modelo" 
                         id="modelo" 
-                        type="text" 
-                        value="<?= $model->modelo ?>" />
-                        
-             <label for="">Ano:</label>
-             <input name="ano" 
+                        type="modelo" 
+                        value="<?= $model->modelo ?>">                    
+            </div>
+
+            <div center class="mb-3">
+                 <label for="formGroupExampleInput" class="form-label">Insira o ano</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ano:" 
+                        name="ano" 
                         id="ano" 
-                        type="number" 
-                        value="<?= $model->ano ?>" /> 
+                        type="ano" 
+                        value="<?= $model->ano ?>">                    
+            </div>
+
+            <div center class="mb-3">
+                 <label for="formGroupExampleInput" class="form-label">Insira a cor</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="cor:" 
+                        name="cor" 
+                        id="cor" 
+                        type="cor" 
+                        value="<?= $model->cor ?>">                    
+            </div>
+
+            <div center class="mb-3">
+                 <label for="formGroupExampleInput" class="form-label">Insira o chassi</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="chassi:" 
+                        name="chassi" 
+                        id="chassi" 
+                        type="chassi" 
+                        value="<?= $model->chassi ?>">                    
+            </div>
+            
+            <div center class="mb-3">
+                 <label for="formGroupExampleInput" class="form-label">Insira a quilometragem</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="quilometragem:" 
+                        name="quilometragem" 
+                        id="quilometragem" 
+                        type="quilometragem" 
+                        value="<?= $model->quilometragem ?>">                    
+            </div>
+            
+            <div center class="mb-3">
+                 <label for="formGroupExampleInput" class="form-label">Insira a quilometragem</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="quilometragem:" 
+                        name="quilometragem" 
+                        id="quilometragem" 
+                        type="quilometragem" 
+                        value="<?= $model->quilometragem ?>">                    
+            </div>
+            
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                 <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <legend>Cadastro de Veículos</legend>
+      
+      
                         
                                  
-             <label for="">Cor:</label>
-             <input name="cor" 
-                        id="cor" 
-                        type="text" 
-                        value="<?= $model->cor ?>" />
+            
                         
-             <label for="">Número de Chassi:</label>
-             <input name="chassi" 
-                        id="chassi" 
-                        type="text" 
-                        value="<?= $model->chassi ?>" />
-                        
-             <label for="">Quilometragem:</label>
-             <input name="quilometragem" 
-                        id="quilometragem" 
-                        type="number" 
-                        value="<?= $model->quilometragem ?>" />
             
              <input name="checkbox[]" 
                         id="revisao" 
