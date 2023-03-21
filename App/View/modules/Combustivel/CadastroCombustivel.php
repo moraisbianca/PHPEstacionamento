@@ -18,57 +18,26 @@
 </head>
 
 <body>
-<div class="container">
-    <ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="">Combustivel</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/tipo/form">Tipo</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/marca/form">Marca</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/frabricante/form">Fabricante</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/veiculo/form">Veiculo</a>
-    </li>
-    </ul>
-</div>
-
-<br>
-
-<div class="container">
       <legend>Cadastro de Combustíveis</legend>
       
-      <form action="/marca/save" method="post">
+      <form action="/combustivel/save" method="post">
 
         <fieldset>
             <input type="hidden" 
                         name="id" 
                         value="<?= $model->id ?>">
             
-            <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a combustíveis</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Combustíveis:" 
-                        name="descricao"
-                        id="descricao"
+            <label for="descricao">Descrição:</label>
+            <input name="descricao" 
+                        id="descricao" 
                         type="text" 
-                        value="<?= $model->descricao ?>">                    
-            </div>
-            
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                 <button class="btn btn-primary" type="submit">Enviar</button>
-            </div>
+                        value="<?= $model->descricao ?>" />
+
+            <button type="submit">Enviar</button>
 
         </fieldset>
 
     </form>
-
-    </form>
-</div>
 </body>
 
 </html>
