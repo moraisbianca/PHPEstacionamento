@@ -10,7 +10,9 @@ use App\DAO\VeiculoDAO;
 
 class VeiculoModel extends Model
 {
-    public $id, $descricao; 
+    public $id, $placa, $modelo, $ano, $cor, $chassi, 
+        $quilometragem, $revisao, $sinistro, 
+        $roubo_furto, $aluguel, $venda, $particular; 
 
     public $lista_marca, $lista_fabricante, $lista_combustivel, $lista_tipo;
 

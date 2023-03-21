@@ -1,6 +1,6 @@
 <?php
 
-namespace APP\Controller;
+namespace App\Controller;
 
 use App\Model\FabricanteModel;
 

@@ -18,31 +18,28 @@
 </head>
 
 <body>
-
-<div class="container">
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="">Tipo</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/marca/form">Marca</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/fabricante/form">Fabricante</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/combustivel/form">Combustivel</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/veiculo/form">Veiculo</a>
-  </li>
-</ul>
-</div>
-
-<br>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="CadastroVeiculo.php">Veículo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Combustível</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Marca</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-<div class="container">
+
+
+<div>
       <legend>Cadastro de Tipos de Veículos</legend>
       
       <form action="/tipo/save" method="post">
@@ -53,16 +50,12 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira o Tipo</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Tipo:" 
-                        name="descricao"
-                        id="descricao"
-                        type="text" 
-                        value="<?= $model->descricao ?>">                   
+                 <label for="formGroupExampleInput" class="form-label">Insira o Tipo:</label>
+                 <input type="text" class="form-control{min-width:800px;}" id="formGroupExampleInput" placeholder="Tipo:" value="<?= $model->descricao ?>">                    
             </div>
             
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                 <button class="btn btn-primary" type="button">Button</button>
+                 <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
 
         </fieldset>

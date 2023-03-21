@@ -18,6 +18,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 <div class="container">
     <ul class="nav nav-tabs">
     <li class="nav-item">
@@ -41,6 +42,8 @@
 <br>
 
 <div class="container">
+=======
+>>>>>>> 85cf1ce982363a55d41b0f6a4a97a56091fadc87
       <legend>Cadastro de Combustíveis</legend>
       
       <form action="/combustivel/save" method="post">
@@ -50,25 +53,17 @@
                         name="id" 
                         value="<?= $model->id ?>">
             
-            <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a combustíveis</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Combustíveis:" 
-                        name="descricao"
-                        id="descricao"
+            <label for="descricao">Descrição:</label>
+            <input name="descricao" 
+                        id="descricao" 
                         type="text" 
-                        value="<?= $model->descricao ?>">                    
-            </div>
-            
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                 <button class="btn btn-primary" type="submit">Enviar</button>
-            </div>
+                        value="<?= $model->descricao ?>" />
+
+            <button type="submit">Enviar</button>
 
         </fieldset>
 
     </form>
-
-    </form>
-</div>
 </body>
 
 </html>
