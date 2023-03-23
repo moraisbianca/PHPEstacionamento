@@ -113,77 +113,60 @@
                         type="quilometragem" 
                         value="<?= $model->quilometragem ?>">                    
             </div>
-            
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                 <button class="btn btn-primary" type="submit">Enviar</button>
-            </div>
 
         </fieldset>
 
     </form>
 
     </form>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="<?= $model->revisao ?>" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault" id="revisao">
+            Revisão
+        </label>
+
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="<?= $model->sinistro ?>" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked"   id="sinistro">
+            Sinistro
+        </label>
+        </div>
+
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="<?= $model->roubo_furto ?>" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked"  id="roubo_furto">
+            Roubo-Furto
+        </label>
+        </div>
+
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="<?= $model->aluguel ?>" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked" id="aluguel">
+             Aluguel
+        </label>
+        </div>
+
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="<?= $model->venda ?>" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked" id="venda">
+            Venda
+        </label>
+        </div>
+
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="<?= $model->particular ?>" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked" id="particular">
+            Particular
+        </label>
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <legend>Cadastro de Veículos</legend>
-      
-      
-                        
-                                 
-            
-                        
-            
-             <input name="checkbox[]" 
-                        id="revisao" 
-                        type="checkbox" 
-                        value="<?= $model->revisao ?>" /> Revisão
-
-             <input name="checkbox[]" 
-                        id="sinistro" 
-                        type="checkbox" 
-                        value="<?= $model->sinistro ?>" /> Sinistro
-
-             <input name="checkbox[]" 
-                        id="roubo_furto" 
-                        type="checkbox" 
-                        value="<?= $model->roubo_furto ?>" /> Roubo-Furto
-            
-            <input name="checkbox[]" 
-                        id="aluguel" 
-                        type="checkbox" 
-                        value="<?= $model->aluguel ?>" /> Aluguel
-
-            <input name="checkbox[]" 
-                        id="venda" 
-                        type="checkbox" 
-                        value="<?= $model->venda ?>" /> Venda
-
-           <input name="checkbox[]" 
-                        id="particular" 
-                        type="checkbox" 
-                        value="<?= $model->particular ?>" /> Particular
-            
-            
-                                 
-            <button type="submit">Enviar</button>
-
-        </fieldset>
-
-    </form>
 </body>
 
 </html>
