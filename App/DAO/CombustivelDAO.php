@@ -3,6 +3,7 @@
 namespace App\DAO;
 
 use App\Model\CombustivelModel;
+use PDO;
 
 class CombustivelDAO extends DAO
 {
@@ -28,7 +29,7 @@ class CombustivelDAO extends DAO
         $stmt = $this->conexao->prepare($sql);
         $stmt->execute();
 
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
     
     public function selectById(int $id)

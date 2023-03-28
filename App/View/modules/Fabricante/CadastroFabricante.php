@@ -51,8 +51,13 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
+<<<<<<< HEAD
                  <label for="formGroupExampleInput" class="form-label">Insira a Fabricante</label>
                  <input type="text" class="form-control" id="formGroupExampleInput" maxlength="15"
+=======
+                 <label for="formGroupExampleInput" class="form-label">Insira o Fabricante:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
+>>>>>>> 3d9772b24bf784158fbeb9277f1980f8023565f2
                         name="descricao" 
                         id="descricao" 
                         type="text" 

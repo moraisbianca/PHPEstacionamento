@@ -41,7 +41,7 @@ class VeiculoDAO extends DAO
         $stmt = $this->conexao->prepare($sql);
         $stmt->execute();
 
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
     }
     
     public function selectById(int $id)
