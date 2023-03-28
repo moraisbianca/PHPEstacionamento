@@ -51,8 +51,8 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a Fabricante</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="placa:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira o Fabricante:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="descricao" 
                         id="descricao" 
                         type="text" 

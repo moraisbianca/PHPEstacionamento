@@ -41,7 +41,7 @@
 <br>
 
 <div class="container">
-<legend>Cadastro de marca</legend>
+<legend>Cadastro de Marca</legend>
       
       <form action="/marca/save" method="post">
 
@@ -51,8 +51,8 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a Marca</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="placa:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira a Marca:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="descricao" 
                         id="descricao" 
                         type="text" 

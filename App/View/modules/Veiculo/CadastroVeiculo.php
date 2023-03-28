@@ -52,7 +52,7 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a Placa:</label>
+                 <label for="formGroupExampleInput" class="form-label">Insira a placa:</label>
                  <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="placa" 
                         id="placa" 
@@ -97,7 +97,7 @@
             </div>
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a quilometragem</label>
+                 <label for="formGroupExampleInput" class="form-label">Insira a quilometragem:</label>
                  <input type="text" class="form-control" id="formGroupExampleInput"
                         name="quilometragem" 
                         id="quilometragem" 

@@ -42,7 +42,7 @@
 <br>
 
 <div class="container">
-<legend>Cadastro de tipo</legend>
+<legend>Cadastro de Tipo</legend>
       
       <form action="/tipo/save" method="post">
 
@@ -52,8 +52,8 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a Descrição</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="placa:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira o tipo de veículo:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="descricao" 
                         id="descricao" 
                         type="text" 
