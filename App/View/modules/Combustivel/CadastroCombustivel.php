@@ -52,7 +52,7 @@
             
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira o combustível:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" 
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="15"
                         name="descricao" 
                         id="descricao" 
                         type="text" 

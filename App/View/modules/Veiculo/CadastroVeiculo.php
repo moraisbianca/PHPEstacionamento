@@ -89,7 +89,7 @@
 
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira o n° de chassi:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput"
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="17"
                         name="chassi" 
                         id="chassi" 
                         type="chassi" 
