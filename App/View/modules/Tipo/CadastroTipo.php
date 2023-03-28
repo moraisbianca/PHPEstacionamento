@@ -53,7 +53,7 @@
             
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira a Descrição</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="placa:" 
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="15"
                         name="descricao" 
                         id="descricao" 
                         type="text" 

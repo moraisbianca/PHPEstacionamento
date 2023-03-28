@@ -53,7 +53,7 @@
             
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira a Placa:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" 
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="7"
                         name="placa" 
                         id="placa" 
                         type="text" 
@@ -62,7 +62,7 @@
 
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira o modelo:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" 
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="20"
                         name="modelo" 
                         id="modelo" 
                         type="modelo" 
@@ -71,7 +71,7 @@
 
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira o ano:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput"
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="4"
                         name="ano" 
                         id="ano" 
                         type="ano" 
@@ -80,7 +80,7 @@
 
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira a cor:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" 
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="15"
                         name="cor" 
                         id="cor" 
                         type="cor" 
@@ -89,7 +89,7 @@
 
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira o chassi:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput"
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="17"
                         name="chassi" 
                         id="chassi" 
                         type="chassi" 
@@ -98,7 +98,7 @@
             
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira a quilometragem</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput"
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="10"
                         name="quilometragem" 
                         id="quilometragem" 
                         type="quilometragem" 
