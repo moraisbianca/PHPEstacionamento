@@ -1,26 +1,43 @@
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cadastro de Combustíveis</title>
+
+      <style>
+        label,
+        input {
+            display: block;
+        }
+    </style>
+
+      <?php include "./View/includes/css_config.php" ?>
+      <?php include "./View/includes/js_config.php" ?>
+</head>
+
+<body>
 <div class="container">
-<table class="table">
-  <thead>
-    <tr>
-    <th scope="col">#</th>
-      <th scope="col">ID</th>
-      <th scope="col">Descrição</th>
-    </tr>
-  </thead>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+          <th scope="col">ID</th>
+          <th scope="col">Descrição</th>
+        </tr>
+      </thead>
 
-  <?php foreach($model->rows as $item): ?>
+      <?php foreach($model->rows as $item): ?>
 
-  <tbody>
-    <tr>
-    <th scope="row">1</th>
-      <td><a href="/combustivel/delete?id=<?= $item->id?>">X</a></td>
-      <td><?= $item->id ?></td>
-      <td><a href="/combustivel/form?id=<?= $item->id ?>"><?= $item->descricao ?></a></td>
-    </tr>
-  </tbody>
+      <tbody>
+        <tr>
+        <th> <a href="/combustivel/delete?id=<?= $item->id?>">X</a></th>
+          <td><?= $item->id ?></td>
+          <td><a href="/combustivel/form?id=<?= $item->id ?>"><?= $item->descricao ?></a></td>
+        </tr>
+      </tbody>
 
-  <?php endforeach ?>
-
-</table>
+      <?php endforeach ?>
+  </table>
 </div>
-
+</body>
