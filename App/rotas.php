@@ -101,6 +101,6 @@ switch ($parse_uri) {
 
 
     default:
-        echo ("cadE a rotaaaaaaaaaaaaaaaaaaaaaaaa");
+        VeiculoController::form();
         break;
 }
