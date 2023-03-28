@@ -104,6 +104,42 @@
                         type="quilometragem" 
                         value="<?= $model->quilometragem ?>">                    
             </div>
+
+            <div center class="mb-3">
+                <label for="select-marca">Selecione a marca</label>
+                <select name="id_marca" id="id_marca" class="form-select">                   
+                    <?php foreach($model->lista_marca as $marca):?>
+                        <option value="<?= $marca->id?>"><?= $marca->descricao?></option>
+                    <?php endforeach;?>
+                </select>
+            </div>
+
+            <div center class="mb-3">
+                <label for="select-combustivel">Selecione o combustível:</label>
+                <select name="id_combustivel" id="id_combustivel" class="form-select">                   
+                    <?php foreach($model->lista_combustivel as $combustivel):?>
+                        <option value="<?= $combustivel->id?>"><?= $combustivel->descricao?></option>
+                    <?php endforeach;?>
+                </select>
+            </div>
+
+            <div center class="mb-3">
+                <label for="select-tipo">Selecione o tipo:</label>
+                <select name="id_tipo" id="id_tipo" class="form-select">                   
+                    <?php foreach($model->lista_tipo as $tipo):?>
+                        <option value="<?= $tipo->id?>"><?= $tipo->descricao?></option>
+                    <?php endforeach;?>
+                </select>
+            </div>
+
+            <div center class="mb-3">
+                <label for="select-fabricante">Selecione o fabricante:</label>
+                <select name="id_fabricante" id="id_fabricante" class="form-select">                   
+                    <?php foreach($model->lista_fabricante as $fabricante):?>
+                        <option value="<?= $fabricante->id?>"><?= $fabricante->descricao?></option>
+                    <?php endforeach;?>
+                </select>
+            </div>
         </fieldset>
 
     </form>
