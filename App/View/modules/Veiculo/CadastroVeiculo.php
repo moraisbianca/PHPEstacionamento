@@ -52,9 +52,14 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
+<<<<<<< HEAD
                  <label for="formGroupExampleInput" class="form-label">Insira a Placa:</label>
                  <input type="text" class="form-control" id="formGroupExampleInput" maxlength="7"
 
+=======
+                 <label for="formGroupExampleInput" class="form-label">Insira a placa:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
+>>>>>>> 9f19fc03f044498819ca6a8c87dd7737b3321ce6
                         name="placa" 
                         id="placa" 
                         type="text" 
@@ -63,7 +68,7 @@
 
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira o modelo:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="20"
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="modelo" 
                         id="modelo" 
                         type="modelo" 
@@ -72,7 +77,7 @@
 
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira o ano:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="4"
+                 <input type="text" class="form-control" id="formGroupExampleInput"
                         name="ano" 
                         id="ano" 
                         type="ano" 
@@ -81,7 +86,7 @@
 
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira a cor:</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="15"
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="cor" 
                         id="cor" 
                         type="cor" 
@@ -89,7 +94,7 @@
             </div>
 
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira o chassi:</label>
+                 <label for="formGroupExampleInput" class="form-label">Insira o n° de chassi:</label>
                  <input type="text" class="form-control" id="formGroupExampleInput" maxlength="17"
                         name="chassi" 
                         id="chassi" 
@@ -98,8 +103,13 @@
             </div>
             
             <div center class="mb-3">
+<<<<<<< HEAD
                  <label for="formGroupExampleInput" class="form-label">Insira a quilometragem</label>
                  <input type="text" class="form-control" id="formGroupExampleInput" maxlength="10"
+=======
+                 <label for="formGroupExampleInput" class="form-label">Insira a quilometragem:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput"
+>>>>>>> 9f19fc03f044498819ca6a8c87dd7737b3321ce6
                         name="quilometragem" 
                         id="quilometragem" 
                         type="quilometragem" 
