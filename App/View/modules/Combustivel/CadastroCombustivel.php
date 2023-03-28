@@ -21,7 +21,7 @@
 <div class="container">
     <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="">Combustivel</a>
+        <a class="nav-link" href="/veiculo/form">Veículo</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="/tipo/form">Tipo</a>
@@ -33,7 +33,7 @@
         <a class="nav-link" href="/fabricante/form">Fabricante</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/veiculo/form">Veiculo</a>
+        <a class="nav-link active" aria-current="page" href="">Combustível</a>
     </li>
     </ul>
 </div>
@@ -51,8 +51,8 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a Combustíveis</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="placa:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira o combustível:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="descricao" 
                         id="descricao" 
                         type="text" 

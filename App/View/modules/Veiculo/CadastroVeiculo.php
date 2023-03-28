@@ -22,7 +22,7 @@
 <div class="container">
     <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="">Veiculo</a>
+        <a class="nav-link active" aria-current="page" href="">Veículo</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="/tipo/form">Tipo</a>
@@ -34,7 +34,7 @@
         <a class="nav-link" href="/fabricante/form">Fabricante</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/combustivel/form">Combustivel</a>
+        <a class="nav-link" href="/combustivel/form">Combustível</a>
     </li>
     </ul>
 </div>
@@ -42,7 +42,7 @@
 <br>
 
 <div class="container">
-      <legend>Cadastro de Veiculo</legend>
+      <legend>Cadastro de Veículo</legend>
       
       <form action="/veiculo/save" method="post">
 
@@ -52,8 +52,8 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a Placa</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="placa:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira a Placa:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="placa" 
                         id="placa" 
                         type="text" 
@@ -61,8 +61,8 @@
             </div>
 
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a modelo</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="modelo:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira o modelo:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="modelo" 
                         id="modelo" 
                         type="modelo" 
@@ -70,8 +70,8 @@
             </div>
 
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira o ano</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ano:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira o ano:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput"
                         name="ano" 
                         id="ano" 
                         type="ano" 
@@ -79,8 +79,8 @@
             </div>
 
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a cor</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="cor:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira a cor:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" 
                         name="cor" 
                         id="cor" 
                         type="cor" 
@@ -88,8 +88,8 @@
             </div>
 
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira o chassi</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="chassi:" 
+                 <label for="formGroupExampleInput" class="form-label">Insira o chassi:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput"
                         name="chassi" 
                         id="chassi" 
                         type="chassi" 
@@ -98,22 +98,12 @@
             
             <div center class="mb-3">
                  <label for="formGroupExampleInput" class="form-label">Insira a quilometragem</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="quilometragem:" 
+                 <input type="text" class="form-control" id="formGroupExampleInput"
                         name="quilometragem" 
                         id="quilometragem" 
                         type="quilometragem" 
                         value="<?= $model->quilometragem ?>">                    
             </div>
-            
-            <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a quilometragem</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="quilometragem:" 
-                        name="quilometragem" 
-                        id="quilometragem" 
-                        type="quilometragem" 
-                        value="<?= $model->quilometragem ?>">                    
-            </div>
-
         </fieldset>
 
     </form>
@@ -128,36 +118,36 @@
 
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="<?= $model->sinistro ?>" id="flexCheckChecked" checked>
-        <label class="form-check-label" for="flexCheckChecked"   id="sinistro">
+        <input class="form-check-input" type="checkbox" value="<?= $model->sinistro ?>" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault"   id="sinistro">
             Sinistro
         </label>
         </div>
 
         <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="<?= $model->roubo_furto ?>" id="flexCheckChecked" checked>
-        <label class="form-check-label" for="flexCheckChecked"  id="roubo_furto">
+        <input class="form-check-input" type="checkbox" value="<?= $model->roubo_furto ?>" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault"  id="roubo_furto">
             Roubo-Furto
         </label>
         </div>
 
         <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="<?= $model->aluguel ?>" id="flexCheckChecked" checked>
-        <label class="form-check-label" for="flexCheckChecked" id="aluguel">
+        <input class="form-check-input" type="checkbox" value="<?= $model->aluguel ?>" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault" id="aluguel">
              Aluguel
         </label>
         </div>
 
         <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="<?= $model->venda ?>" id="flexCheckChecked" checked>
-        <label class="form-check-label" for="flexCheckChecked" id="venda">
+        <input class="form-check-input" type="checkbox" value="<?= $model->venda ?>" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault" id="venda">
             Venda
         </label>
         </div>
 
         <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="<?= $model->particular ?>" id="flexCheckChecked" checked>
-        <label class="form-check-label" for="flexCheckChecked" id="particular">
+        <input class="form-check-input" type="checkbox" value="<?= $model->particular ?>" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault" id="particular">
             Particular
         </label>
         </div>

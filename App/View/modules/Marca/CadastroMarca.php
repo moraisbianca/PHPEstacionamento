@@ -20,21 +20,21 @@
 <body>
 <div class="container">
     <ul class="nav nav-tabs">
-    <li class="nav-item">
+        <li class="nav-item">
+            <a class="nav-link" href="/veiculo/form">Veículo</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/tipo/form">Tipo</a>
+        </li>
+        <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="">Marca</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/combustivel/form">Combustivel</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/tipo/form">Tipo</a>
-    </li>
-    <li class="nav-item">
+        </li>
+        <li class="nav-item">
         <a class="nav-link" href="/fabricante/form">Fabricante</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/veiculo/form">Veiculo</a>
-    </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/combustivel/form">Combustível</a>
+        </li>
     </ul>
 </div>
 
