@@ -51,8 +51,8 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a Marca</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="15"
+                 <label for="formGroupExampleInput" class="form-label">Insira a marca do veículo:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="40"
                         name="descricao" 
                         id="descricao" 
                         type="text" 

@@ -15,7 +15,7 @@ class VeiculoDAO extends DAO
 
     function insert(VeiculoModel $model) 
     {  
-        $sql = "INSERT INTO veiculo (placa, modelo, ano, cor, chassi, quilometragem, revisao, sinistro, roubo_furto, aluguel, venda, particular) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        $sql = "INSERT INTO veiculo (placa, modelo, ano, cor, chassi, quilometragem, revisao, sinistro, roubo_furto, aluguel, venda, particular, id_fabricante, id_marca, id_combustivel, id_tipo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         
         $stmt = $this->conexao->prepare($sql);
 
@@ -31,6 +31,10 @@ class VeiculoDAO extends DAO
         $stmt->bindValue(10, $model-> aluguel);
         $stmt->bindValue(11, $model-> venda);
         $stmt->bindValue(12, $model-> particular);
+        $stmt->bindValue(13, $model-> lista_fabricante);
+        $stmt->bindValue(14, $model-> lista_marca);
+        $stmt->bindValue(15, $model-> lista_combustivel);
+        $stmt->bindValue(16, $model-> lista_tipo);
         $stmt->execute();      
     }
 
@@ -58,7 +62,7 @@ class VeiculoDAO extends DAO
 
     public function update(VeiculoModel $model)
     {
-        $sql = "UPDATE veiculo set placa=?, modelo=?, ano=?, cor=?, chassi=?, quilometragem=?, revisao=?, sinistro=?, roubo_furto=?, aluguel=?, venda=?, particular=? WHERE id=? ";
+        $sql = "UPDATE veiculo set placa=?, modelo=?, ano=?, cor=?, chassi=?, quilometragem=?, revisao=?, sinistro=?, roubo_furto=?, aluguel=?, venda=?, particular=?, id_fabricante=?, id_marca=?, id_combustivel=?, id_tipo=? WHERE id=? ";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $model-> placa);
@@ -73,7 +77,11 @@ class VeiculoDAO extends DAO
         $stmt->bindValue(10, $model-> aluguel);
         $stmt->bindValue(11, $model-> venda);
         $stmt->bindValue(12, $model-> particular);
-        $stmt->bindValue(13, $model->id);
+        $stmt->bindValue(13, $model-> lista_fabricante);
+        $stmt->bindValue(14, $model-> lista_marca);
+        $stmt->bindValue(15, $model-> lista_combustivel);
+        $stmt->bindValue(16, $model-> lista_tipo);
+        $stmt->bindValue(17, $model->id);
         $stmt->execute();
     }
     

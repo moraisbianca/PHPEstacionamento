@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Cadastro de Tipo de Veículo</title>
+      <title>Cadastro de Tipo de Veículos</title>
 
       <style>
         label,
@@ -36,6 +36,20 @@
         <li class="nav-item">
             <a class="nav-link" href="/combustivel/form">Combustível</a>
         </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">a</a></li>
+          </ul>
+        </li>
+
     </ul>
 </div>
 
@@ -52,8 +66,8 @@
                         value="<?= $model->id ?>">
             
             <div center class="mb-3">
-                 <label for="formGroupExampleInput" class="form-label">Insira a Descrição</label>
-                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="15"
+                 <label for="formGroupExampleInput" class="form-label">Insira o tipo de veículo:</label>
+                 <input type="text" class="form-control" id="formGroupExampleInput" maxlength="40"
                         name="descricao" 
                         id="descricao" 
                         type="text" 

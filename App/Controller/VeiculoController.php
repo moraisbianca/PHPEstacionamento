@@ -41,12 +41,16 @@ class VeiculoController extends Controller {
             $model->cor = $_POST['cor'];
             $model->chassi = $_POST['chassi'];
             $model->quilometragem = $_POST['quilometragem'];
-            $model->revisao = $_POST['revisao'];
-            $model->sinistro = $_POST['sinistro'];
-            $model->roubo_furto = $_POST['roubo_furto'];
-            $model->aluguel = $_POST['aluguel'];
-            $model->venda = $_POST['venda'];
-            $model->particular = $_POST['particular'];
+            $model->revisao =  (isset($_POST['revisao'])) ? 1 : 0;
+            $model->sinistro = (isset($_POST['sinistro'])) ? 1 : 0;
+            $model->roubo_furto = (isset($_POST['roubo_furto'])) ? 1 : 0;
+            $model->aluguel = (isset($_POST['aluguel'])) ? 1 : 0;
+            $model->venda = (isset($_POST['venda'])) ? 1 : 0;
+            $model->particular = (isset($_POST['particular'])) ? 1 : 0;
+            $model->lista_marca = $_POST['lista_marca'];
+            $model->lista_fabricante = $_POST['lista_fabricante'];
+            $model->lista_combustivel = $_POST['lista_combustivel'];
+            $model->lista_tipo = $_POST['lista_tipo'];
 
             $model->save();
 

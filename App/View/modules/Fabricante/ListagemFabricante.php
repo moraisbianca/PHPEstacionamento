@@ -3,7 +3,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Cadastro de Combustíveis</title>
+      <title>Listagem de Fabricantes</title>
 
       <style>
         label,
@@ -17,6 +17,27 @@
 </head>
 
 <body>
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="/veiculo/form">Veículo</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/tipo/form">Tipo</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/marca/form">Marca</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="">Fabricante</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/combustivel/form">Combustível</a>
+        </li>
+    </ul>
+</div>
+
+<br>
 <div class="container">
   <table class="table table-striped">
     <thead>
