@@ -83,7 +83,7 @@
                 <div center class="mb-3">
                     <label for="select-marca">Selecione a marca:</label>
                     <select name="id_marca" id="id_marca" class="form-select">
-                        <?php foreach ($model->lista_marca as $marca) : ?>
+                        <?php foreach ($model->id_marca as $marca) : ?>
                             <option value="<?= $marca->id ?>"><?= $marca->descricao ?></option>
                         <?php endforeach; ?>
                     </select>
@@ -92,7 +92,7 @@
                 <div center class="mb-3">
                     <label for="select-combustivel">Selecione o combustível:</label>
                     <select name="id_combustivel" id="id_combustivel" class="form-select">
-                        <?php foreach ($model->lista_combustivel as $combustivel) : ?>
+                        <?php foreach ($model->id_combustivel as $combustivel) : ?>
                             <option value="<?= $combustivel->id ?>"><?= $combustivel->descricao ?></option>
                         <?php endforeach; ?>
                     </select>
@@ -101,7 +101,7 @@
                 <div center class="mb-3">
                     <label for="select-tipo">Selecione o tipo:</label>
                     <select name="id_tipo" id="id_tipo" class="form-select">
-                        <?php foreach ($model->lista_tipo as $tipo) : ?>
+                        <?php foreach ($model->id_tipo as $tipo) : ?>
                             <option value="<?= $tipo->id ?>"><?= $tipo->descricao ?></option>
                         <?php endforeach; ?>
                     </select>
@@ -110,7 +110,7 @@
                 <div center class="mb-3">
                     <label for="select-fabricante">Selecione o fabricante:</label>
                     <select name="id_fabricante" id="id_fabricante" class="form-select">
-                        <?php foreach ($model->lista_fabricante as $fabricante) : ?>
+                        <?php foreach ($model->id_fabricante as $fabricante) : ?>
                             <option value="<?= $fabricante->id ?>"><?= $fabricante->descricao ?></option>
                         <?php endforeach; ?>
                     </select>
@@ -118,43 +118,45 @@
             </fieldset>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="<?= $model->revisao ?>" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault" id="revisao">
+                <input class="form-check-input" type="checkbox" <?= ($model->revisao) ? 'checked' : '' ?> value="true" id="check-revisao">
+                
+                
+                <label class="form-check-label" for="check-revisao" id="revisao">
                     Revisão
                 </label>
 
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="<?= $model->sinistro ?>" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault" id="sinistro">
+                <input name="sinistro" class="form-check-input" type="checkbox" <?= ($model->sinistro) ? 'checked' : '' ?> value="true" id="check-sinistro">
+                <label class="form-check-label" for="check-sinistro" id="sinistro">
                     Sinistro
                 </label>
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="<?= $model->roubo_furto ?>" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault" id="roubo_furto">
+                <input class="form-check-input" type="checkbox" <?= ($model->roubo_furto) ? 'checked' : '' ?> value="true" id="check-roubo_furto">
+                <label class="form-check-label" for="check-roubo_furto" id="roubo_furto">
                     Roubo-Furto
                 </label>
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="<?= $model->aluguel ?>" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault" id="aluguel">
+                <input class="form-check-input" type="checkbox" <?= ($model->aluguel) ? 'checked' : '' ?> value="true" id="check-aluguel">
+                <label class="form-check-label" for="check-aluguel" id="aluguel">
                     Aluguel
                 </label>
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="<?= $model->venda ?>" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault" id="venda">
+                <input class="form-check-input" type="checkbox" <?= ($model->venda) ? 'checked' : '' ?> value="true" id="check-venda">
+                <label class="form-check-label" for="check-venda" id="venda">
                     Venda
                 </label>
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="<?= $model->particular ?>" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault" id="particular">
+                <input class="form-check-input" type="checkbox" <?= ($model->particular) ? 'checked' : '' ?> value="true" id="check-particular">
+                <label class="form-check-label" for="check-particular" id="particular">
                     Particular
                 </label>
             </div>

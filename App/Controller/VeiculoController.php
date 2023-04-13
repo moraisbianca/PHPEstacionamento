@@ -41,16 +41,17 @@ class VeiculoController extends Controller {
             $model->cor = $_POST['cor'];
             $model->chassi = $_POST['chassi'];
             $model->quilometragem = $_POST['quilometragem'];
-            $model->revisao =  (isset($_POST['revisao'])) ? 1 : 0;
-            $model->sinistro = (isset($_POST['sinistro'])) ? 1 : 0;
-            $model->roubo_furto = (isset($_POST['roubo_furto'])) ? 1 : 0;
-            $model->aluguel = (isset($_POST['aluguel'])) ? 1 : 0;
-            $model->venda = (isset($_POST['venda'])) ? 1 : 0;
-            $model->particular = (isset($_POST['particular'])) ? 1 : 0;
-            $model->lista_marca = $_POST['lista_marca'];
-            $model->lista_fabricante = $_POST['lista_fabricante'];
-            $model->lista_combustivel = $_POST['lista_combustivel'];
-            $model->lista_tipo = $_POST['lista_tipo'];
+            //$model->revisao =  (isset($_POST['revisao'])) ? true : false;
+            $model->sinistro = (isset($_POST['sinistro'])) ? true : false;
+            //$model->roubo_furto = (isset($_POST['roubo_furto'])) ? true : false;
+            //$model->aluguel = (isset($_POST['aluguel'])) ? true : false;
+            //$model->venda = (isset($_POST['venda'])) ? true : false;
+            //$model->particular = (isset($_POST['particular'])) ? true : false;
+            
+            $model->id_marca = $_POST['id_marca'];
+            $model->id_fabricante = $_POST['id_fabricante'];
+            $model->id_combustivel = $_POST['id_combustivel'];
+            $model->id_tipo = $_POST['id_tipo'];
 
             $model->save();
 

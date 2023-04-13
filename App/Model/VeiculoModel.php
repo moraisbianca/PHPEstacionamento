@@ -14,7 +14,7 @@ class VeiculoModel extends Model
         $quilometragem, $revisao, $sinistro, 
         $roubo_furto, $aluguel, $venda, $particular; 
 
-    public $lista_marca, $lista_fabricante, $lista_combustivel, $lista_tipo;
+    public $id_marca, $id_fabricante, $id_combustivel, $id_tipo;
 
     public function save()
     {
@@ -39,25 +39,25 @@ class VeiculoModel extends Model
     public function getAllMarca(){
         $dao = new MarcaDAO();
 
-        $this->lista_marca = $dao->select();
+        $this->id_marca = $dao->select();
     }
 
     public function getAllFabricante(){
         $dao = new FabricanteDAO();
 
-        $this->lista_fabricante = $dao->select();
+        $this->id_fabricante = $dao->select();
     }
 
     public function getAllCombustivel(){
         $dao = new CombustivelDAO();
 
-        $this->lista_combustivel = $dao->select();
+        $this->id_combustivel = $dao->select();
     }
 
     public function getAllTipo(){
         $dao = new TipoDAO();
 
-        $this->lista_tipo = $dao->select();
+        $this->id_tipo = $dao->select();
     }
 
 

@@ -31,10 +31,10 @@ class VeiculoDAO extends DAO
         $stmt->bindValue(10, $model-> aluguel);
         $stmt->bindValue(11, $model-> venda);
         $stmt->bindValue(12, $model-> particular);
-        $stmt->bindValue(13, $model-> lista_fabricante);
-        $stmt->bindValue(14, $model-> lista_marca);
-        $stmt->bindValue(15, $model-> lista_combustivel);
-        $stmt->bindValue(16, $model-> lista_tipo);
+        $stmt->bindValue(13, $model-> id_fabricante);
+        $stmt->bindValue(14, $model-> id_marca);
+        $stmt->bindValue(15, $model-> id_combustivel);
+        $stmt->bindValue(16, $model-> id_tipo);
         $stmt->execute();      
     }
 
@@ -77,10 +77,10 @@ class VeiculoDAO extends DAO
         $stmt->bindValue(10, $model-> aluguel);
         $stmt->bindValue(11, $model-> venda);
         $stmt->bindValue(12, $model-> particular);
-        $stmt->bindValue(13, $model-> lista_fabricante);
-        $stmt->bindValue(14, $model-> lista_marca);
-        $stmt->bindValue(15, $model-> lista_combustivel);
-        $stmt->bindValue(16, $model-> lista_tipo);
+        $stmt->bindValue(13, $model-> id_fabricante);
+        $stmt->bindValue(14, $model-> id_marca);
+        $stmt->bindValue(15, $model-> id_combustivel);
+        $stmt->bindValue(16, $model-> id_tipo);
         $stmt->bindValue(17, $model->id);
         $stmt->execute();
     }
