@@ -32,6 +32,22 @@
                     <th scope="col">#</th>
                     <th scope="col">ID</th>
                     <th scope="col">Placa</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Ano</th>
+                    <th scope="col">Cor</th>
+                    <th scope="col">Chassi</th>
+                    <th scope="col">Quilometragem</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Combustivel</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Fabricante</th>
+                    <th scope="col">Revisão</th>
+                    <th scope="col">Sinistro</th>
+                    <th scope="col">Furto</th>
+                    <th scope="col">Alugel</th>
+                    <th scope="col">Venda</th>
+                    <th scope="col">Paticular</th>
+
                 </tr>
             </thead>
 
@@ -42,6 +58,12 @@
                         <th> <a href="/tipo/delete?id=<?= $item->id ?>">X</a></th>
                         <td><?= $item->id ?></td>
                         <td><a href="/tipo/form?id=<?= $item->id ?>"><?= $item->placa ?></a></td>
+                        <td><a><?= $item->modelo ?></a></td>
+                        <td><a><?= $item->ano ?></a></td>
+                        <td><a><?= $item->cor ?></a></td> 
+                        <td><a><?= $item->chassi ?></a></td>
+                        <td><a><?= $item->quilometragem ?></a></td>
+
                     </tr>
                 </tbody>
 

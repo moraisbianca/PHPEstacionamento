@@ -14,6 +14,8 @@
 
       <?php include "./View/includes/css_config.php" ?>
       <?php include "./View/includes/js_config.php" ?>
+      <?php include "./View/modules/header.php"?>
+
 </head>
 
 <body>
