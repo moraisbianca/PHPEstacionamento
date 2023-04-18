@@ -7,58 +7,15 @@
       <title>Cadastro de Tipo de Veículos</title>
 
       <style>
-        label,
-        input {
-            display: block;
-        }
-    </style>
+
+      </style>
 
       <?php include "./View/includes/css_config.php" ?>
       <?php include "./View/includes/js_config.php" ?>
+      <?php include "./View/modules/header.php"?>
 </head>
 
 <body>
-
-<div class="container">
-    <ul class="nav nav-tabs">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Veículo
-            </a>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/veiculo/form">Cadastrar</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/veiculo">Visualizar</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">Tipo</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="/marca/form">Marca</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="/fabricante/form">Fabricante</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/combustivel/form">Combustível</a>
-        </li>
-
-        <!--
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/veiculo/form">Cadastrar</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/veiculo">Visualizar</a></li>
-          </ul>
-        </li> !-->
-
-    </ul>
-</div>
-
 <br>
 
 <div class="container">
