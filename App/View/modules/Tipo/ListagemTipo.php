@@ -18,25 +18,6 @@
 
 <body>
 
-<div class="container">
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link" href="/veiculo/form">Veículo</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">Tipo</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="/marca/form">Marca</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="/fabricante/form">Fabricante</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/combustivel/form">Combustível</a>
-        </li>
-    </ul>
-</div>
 
 <br>
 <div class="container">
