@@ -32,7 +32,7 @@ create table veiculo(
 	ano char(4) not null,
 	cor varchar(50) not null,
 	chassi char(17) not null,
-	quilometragem int(15) not null,
+	quilometragem double not null,
 	revisao boolean,
 	sinistro boolean,
 	roubo_furto boolean,
