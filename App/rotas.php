@@ -14,6 +14,24 @@ $parse_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch ($parse_uri) {
 
+        // rotas de backup
+    case "/exportar":
+        $return_var = NULL;
+        $output = NULL;
+        $command = 'C:/"Program Files"/MySQL/"MySQL Server 8.0"/bin/mysqldump -uroot - petecjau -p3307 -hlocalhost db_estacionamento > C:/Dev/file.sql';
+
+        exec($command, $output, $exit_code);
+
+        var_dump($exit_code);
+
+        //hmmmmmmmmmm erro!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        /*$h=fopen("C:Dev/file.sql", "w+");
+        fputs($h, $output);
+        fclose($h);*/
+
+        echo "deu certo";
+        break;
+
         //  rotas de veículo
     case "/veiculo":
         VeiculoController::index();
