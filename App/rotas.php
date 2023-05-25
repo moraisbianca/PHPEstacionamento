@@ -18,16 +18,11 @@ switch ($parse_uri) {
     case "/exportar":
         $return_var = NULL;
         $output = NULL;
-        $command = 'C:/"Program Files"/MySQL/"MySQL Server 8.0"/bin/mysqldump -uroot - petecjau -p3307 -hlocalhost db_estacionamento > C:/Dev/file.sql';
+        $command = 'C:/"Program Files"/MySQL/"MySQL Server 8.0"/bin/mysqldump -uroot - petecjau -P3307 -hlocalhost db_estacionamento > C:/Dev/file.sql';
 
         exec($command, $output, $exit_code);
 
         var_dump($exit_code);
-
-        //hmmmmmmmmmm erro!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        /*$h=fopen("C:Dev/file.sql", "w+");
-        fputs($h, $output);
-        fclose($h);*/
 
         echo "deu certo";
         break;
