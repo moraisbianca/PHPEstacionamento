@@ -18,7 +18,7 @@ switch ($parse_uri) {
     case "/exportar":
         $return_var = NULL;
         $output = NULL;
-        $command = 'C:/"Program Files"/MySQL/"MySQL Server 8.0"/bin/mysqldump -uroot - petecjau -P3307 -hlocalhost db_estacionamento > C:/Dev/file.sql';
+        $command = 'C:/"Program Files"/MySQL/"MySQL Server 8.0"/bin/mysqldump -uroot -petecjau -P3307 -hlocalhost db_estacionamento > C:/Dev/file.sql';
 
         exec($command, $output, $exit_code);
 
@@ -26,6 +26,23 @@ switch ($parse_uri) {
 
         echo "deu certo";
         break;
+
+        case "/importar":
+
+            $nome_arquivo = "C:/Dev/file.sql";
+
+            $file = fopen($nome_arquivo, "r");
+            $sql = fread($file, filesize($nome_arquivo));
+
+            $dsn = "mysql:host=localhost:3307"; 
+            $user = "root";
+            $pass = "etecjau";
+            
+            $conexao = new PDO($dsn, $user, $pass);
+            $conexao->exec($sql);
+
+            break;
+
 
         //  rotas de veículo
     case "/veiculo":

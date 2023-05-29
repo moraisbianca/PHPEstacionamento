@@ -52,11 +52,16 @@
             <li><a class="dropdown-item" href="/combustivel">Visualizar</a></li>
           </ul>
         </li>
-
-        <div>
-          <button class="btn btn-primary" type="submit">Backup</button>
-        </div>
-
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Backup
+            </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/exportar">exportar</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/importar">importar</a></li>
+          </ul>
+        </li>
     </ul>
 </div>
 </header>

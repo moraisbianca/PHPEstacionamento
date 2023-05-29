@@ -38,6 +38,16 @@ class VeiculoDAO extends DAO
         $stmt->execute();      
     }
 
+    public function selectByDescricao()
+    {
+        $sql= "";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->execute();
+
+        return $stmt->fetchObject();
+    }
+
     public function select()
     {
         $sql = "SELECT * FROM veiculo ";

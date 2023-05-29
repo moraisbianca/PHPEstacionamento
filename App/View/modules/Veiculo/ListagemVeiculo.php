@@ -44,9 +44,9 @@
                     <th scope="col">Revisão</th>
                     <th scope="col">Sinistro</th>
                     <th scope="col">Furto</th>
-                    <th scope="col">Alugel</th>
+                    <th scope="col">Aluguel</th>
                     <th scope="col">Venda</th>
-                    <th scope="col">Paticular</th>
+                    <th scope="col">Particular</th>
 
                 </tr>
             </thead>
@@ -63,6 +63,16 @@
                         <td><a><?= $item->cor ?></a></td> 
                         <td><a><?= $item->chassi ?></a></td>
                         <td><a><?= $item->quilometragem ?></a></td>
+                        <td><a><?= $item->id_marca ?></a></td>
+                        <td><a><?= $item->id_combustivel ?></a></td>
+                        <td><a><?= $item->id_tipo ?></a></td>
+                        <td><a><?= $item->id_fabricante ?></a></td>
+                        <td><a><?= $item->revisao ?></a></td>
+                        <td><a><?= $item->sinistro ?></a></td>
+                        <td><a><?= $item->roubo_furto ?></a></td>
+                        <td><a><?= $item->aluguel ?></a></td>
+                        <td><a><?= $item->venda ?></a></td>
+                        <td><a><?= $item->particular ?></a></td>
 
                     </tr>
                 </tbody>
