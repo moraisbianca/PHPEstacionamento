@@ -60,7 +60,7 @@
 
                 <div center class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Insira a quilometragem:</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" maxlength="15" name="quilometragem" id="quilometragem" type="quilometragem" value="<?= $model->quilometragem ?>">
+                    <input type="text" class="form-control" id="formGroupExampleInput" maxlength="5" name="quilometragem" id="quilometragem" type="quilometragem" value="<?= $model->quilometragem ?>">
                 </div>
 
                 <div center class="mb-3">

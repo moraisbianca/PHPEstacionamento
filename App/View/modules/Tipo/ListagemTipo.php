@@ -36,7 +36,7 @@
 
       <tbody>
         <tr>
-        <th> <a href="/tipo/delete?id=<?= $item->id?>">X</a></th>
+        <th> <a href="/tipo/delete?id=<?= $item->id ?>">X</a></th>
           <td><?= $item->id ?></td>
           <td><a href="/tipo/form?id=<?= $item->id ?>"><?= $item->descricao ?></a></td>
         </tr>

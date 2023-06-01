@@ -38,19 +38,15 @@ class VeiculoDAO extends DAO
         $stmt->execute();      
     }
 
-    public function selectByDescricao()
-    {
-        $sql= "";
-
-        $stmt = $this->conexao->prepare($sql);
-        $stmt->execute();
-
-        return $stmt->fetchObject();
-    }
-
     public function select()
     {
-        $sql = "SELECT * FROM veiculo ";
+        $sql = "SELECT v.id, v.placa, v.modelo, v.ano, v.cor, v.chassi, v.quilometragem, v.revisao, v.sinistro, v.roubo_furto, v.aluguel, 
+        v.venda, v.particular, f.descricao as fabricante, m.descricao as marca, c.descricao as combustivel, t.descricao as tipo
+        FROM veiculo v
+        LEFT JOIN fabricante f ON (f.id = v.id_fabricante)
+        LEFT JOIN marca m ON (m.id = v.id_marca)
+        LEFT JOIN combustivel c ON (c.id = v.id_combustivel)
+        LEFT JOIN tipo t ON (t.id = v.id_tipo);";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->execute();

@@ -55,18 +55,18 @@
 
                 <tbody>
                     <tr>
-                        <th> <a href="/tipo/delete?id=<?= $item->id ?>">X</a></th>
+                        <th> <a href="/veiculo/delete?id=<?= $item->id ?>">X</a></th>
                         <td><?= $item->id ?></td>
-                        <td><a href="/tipo/form?id=<?= $item->id ?>"><?= $item->placa ?></a></td>
+                        <td><a href="/veiculo/form?id=<?= $item->id ?>"><?= $item->placa ?></a></td>
                         <td><a><?= $item->modelo ?></a></td>
                         <td><a><?= $item->ano ?></a></td>
                         <td><a><?= $item->cor ?></a></td> 
                         <td><a><?= $item->chassi ?></a></td>
                         <td><a><?= $item->quilometragem ?></a></td>
-                        <td><a><?= $item->id_marca ?></a></td>
-                        <td><a><?= $item->id_combustivel ?></a></td>
-                        <td><a><?= $item->id_tipo ?></a></td>
-                        <td><a><?= $item->id_fabricante ?></a></td>
+                        <td><a><?= $item->marca ?></a></td>
+                        <td><a><?= $item->combustivel ?></a></td>
+                        <td><a><?= $item->tipo ?></a></td>
+                        <td><a><?= $item->fabricante ?></a></td>
                         <td>
                             <input type="checkbox" disabled class="form-check-input" name="Revisao" id="Revisao" <?= ($item->revisao == 1) ? 'checked' : "" ?>>
                         </td>
