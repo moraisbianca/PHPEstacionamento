@@ -67,12 +67,24 @@
                         <td><a><?= $item->id_combustivel ?></a></td>
                         <td><a><?= $item->id_tipo ?></a></td>
                         <td><a><?= $item->id_fabricante ?></a></td>
-                        <td><a><?= $item->revisao ?></a></td>
-                        <td><a><?= $item->sinistro ?></a></td>
-                        <td><a><?= $item->roubo_furto ?></a></td>
-                        <td><a><?= $item->aluguel ?></a></td>
-                        <td><a><?= $item->venda ?></a></td>
-                        <td><a><?= $item->particular ?></a></td>
+                        <td>
+                            <input type="checkbox" disabled class="form-check-input" name="Revisao" id="Revisao" <?= ($item->revisao == 1) ? 'checked' : "" ?>>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled class="form-check-input" name="Sinistro" id="Sinistro" <?= ($item->sinistro == 1) ? 'checked' : "" ?>>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled class="form-check-input" name="roubo_furto" id="roubo_furto" <?= ($item->roubo_furto == 1) ? 'checked' : "" ?>>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled class="form-check-input" name="aluguel" id="aluguel" <?= ($item->aluguel == 1) ? 'checked' : "" ?>>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled class="form-check-input" name="venda" id="venda" <?= ($item->venda == 1) ? 'checked' : "" ?>>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled class="form-check-input" name="particular" id="particular" <?= ($item->particular == 1) ? 'checked' : "" ?>>
+                        </td>
 
                     </tr>
                 </tbody>
